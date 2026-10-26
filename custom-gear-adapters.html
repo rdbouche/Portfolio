@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Custom Gear Adapters — Renee D Boucher</title>
+<meta name="description" content="Two custom gear adapters designed in Onshape and 3D-printed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html" aria-label="Renee Boucher, home"><img src="assets/logo.png" alt="RB monogram with a monstera leaf, 'renee boucher'"></a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="index.html" aria-current="page">work</a>
+    <a href="about.html">about</a>
+  </nav>
+  <p class="tagline">user experience researcher / designer</p>
+</header>
+<main>
+
+<h1>Custom gear adapters</h1>
+<p class="role">// designer //</p>
+<p class="lede">Designed and 3D-printed 2 custom gear adapters in Onshape, one original model and one modified from an existing design, achieving precise cross-compatible fits for consumer outdoor products.</p>
+<div class="demo-wide">
+  <video id="cadd" autoplay loop muted playsinline preload="metadata" poster="media/cadd-adapter-poster.jpg" aria-label="Screen recording of the Nemo to Sea to Summit adapter being modeled in Onshape">
+    <source src="media/cadd-adapter.webm" type="video/webm">
+    <source src="media/cadd-adapter.mp4" type="video/mp4">
+  </video>
+  <figcaption style="margin-top:.8rem;font-size:1rem;color:#555">The Nemo to Sea to Summit adapter in Onshape.</figcaption>
+</div>
+<script>
+  // Respect reduced-motion: show controls and don't autoplay.
+  (function(){
+    var v=document.getElementById('cadd');
+    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      v.removeAttribute('autoplay');v.pause();v.setAttribute('controls','');
+    }
+  })();
+</script>
+<nav class="pager" aria-label="More work"><a class="prev" href="pacetrace.html"><span aria-hidden="true">‹</span><span>PaceTrace</span></a></nav>
+
+</main>
+<footer><p>© 2025. All Rights Reserved to Renee Boucher.</p></footer>
+</body>
+</html>
