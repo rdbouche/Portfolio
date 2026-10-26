@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PaceTrace — Renee D Boucher</title>
-<meta name="description" content="PaceTrace: an iPhone app that turns Apple Health workout data into trend dashboards and exports.">
+<title>App Development - PaceTrace — Renee D Boucher</title>
+<meta name="description" content="Renee Boucher: research, operations, and human-centered health.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -17,42 +17,38 @@
     <a href="index.html" aria-current="page">work</a>
     <a href="about.html">about</a>
   </nav>
-  <p class="tagline">user experience researcher / designer</p>
+  <p class="tagline">research · operations · human-centered health</p>
 </header>
 <main>
 
-<h1>PaceTrace</h1>
-<p class="role">// designer &amp; developer //</p>
-<p class="lede">An iPhone app that turns Apple Health workout data into a searchable history, trend dashboards, and clean exports.</p>
+<h1>App Development - PaceTrace</h1>
+<p class="role" style="margin-top:50px">// designer &amp; developer //</p>
+<p class="lede" style="margin-bottom:60px">A triathlon fitness app that reads your exercise history and tells you whether you’re improving, declining, or holding steady.</p>
 <div class="demo">
   <video controls playsinline preload="metadata" poster="media/pacetrace-poster.jpg" aria-label="Screen recording of the PaceTrace app, about one minute long">
     <source src="media/pacetrace-demo.mp4" type="video/mp4">
     Your browser can’t play this video. <a href="media/pacetrace-demo.mp4">Download the demo</a>.
   </video>
   <div>
-    <p>PaceTrace reads workouts from Apple Health and keeps them in one place: running, cycling, swimming, hiking, and core training, with filters for each sport.</p>
-    <p>The demo walks through the four tabs: the <span class="key">workout list</span>, the <span class="key">dashboard</span>, <span class="key">export</span>, and <span class="key">settings</span>.</p>
+    <p><span class="key">Why I built it</span></p>
+    <p>I created PaceTrace because I couldn’t find a good way to track fitness performance over time for triathlon. TrainingPeaks, which many triathlon coaches use, offers performance insights called “fitness, form, and fatigue,” and I found them vague and hard to act on.</p>
+    <p>I wanted an app that turns your own exercise history into fitness insights, using the same kinds of metrics a triathlon coach would, so you can see whether you are improving, declining, or holding steady over time.</p>
   </div>
 </div>
 
-<h2>how it works</h2>
+<h2 style="margin-top:110px">how it works</h2>
+<p>PaceTrace reads workouts from Apple Health and compares your recent training with the period before it, one sport at a time.</p>
 <div class="screens">
   <figure><img src="media/pt-workouts.jpg" alt="PaceTrace workout list showing runs, hikes, and rides with duration and distance" loading="lazy"><figcaption>Workouts, filtered by sport</figcaption></figure>
   <figure><img src="media/pt-dashboard.jpg" alt="PaceTrace dashboard with swimming pace and hiking heart rate trend charts" loading="lazy"><figcaption>Dashboard trends</figcaption></figure>
   <figure><img src="media/pt-export.jpg" alt="PaceTrace export screen with date range and file format options" loading="lazy"><figcaption>Export</figcaption></figure>
   <figure><img src="media/pt-settings.jpg" alt="PaceTrace settings screen with swim speed and heart rate zone inputs" loading="lazy"><figcaption>Settings</figcaption></figure>
 </div>
-<div class="measure">
-<h3>workouts</h3>
-<p>Every workout from Apple Health appears in a single list with its duration, distance or energy, and date. Filter chips narrow it to one sport.</p>
-<h3>dashboard</h3>
-<p>Each sport gets a trend card that compares the last period to the one before it, with a label for whether you’re improving or declining. Running and cycling use an efficiency factor, which is speed per heartbeat on aerobic-zone sessions. Swimming tracks pace per 100 m, and hiking tracks heart rate on comparable climbs. The time range runs from one month to all time.</p>
-<h3>export</h3>
-<p>Pick a date range and a format (XLSX, CSV, or TSV), and PaceTrace builds the files. The Excel workbook has five sheets: All, Swim, Bike, Run, and Other.</p>
-<h3>settings</h3>
-<p>Set your critical swim speed, birth year or tested max heart rate, and display units. The dashboard uses these to find aerobic-zone workouts.</p>
-</div>
-<nav class="pager" aria-label="More work"><a class="prev" href="artwork-mixed-media.html"><span aria-hidden="true">‹</span><span>Artwork | Mixed Media</span></a><a class="next" href="custom-gear-adapters.html"><span>Custom Gear Adapters</span><span aria-hidden="true">›</span></a></nav>
+<h2 class="sm" style="margin-top:90px">dashboard</h2>
+<p>Each sport gets a trend card with a clear label: improving or declining. Running and cycling use an <span class="key">efficiency factor</span>, which is speed per heartbeat on aerobic-zone sessions. Swimming tracks <span class="key">pace per 100 m</span>, and hiking tracks <span class="key">heart rate on comparable climbs</span>. The time range runs from one month to all time.</p>
+<h2 class="sm" style="margin-top:60px">workouts, export, and settings</h2>
+<p>Every workout from Apple Health appears in one list, with filters for each sport. You can export a date range as XLSX, CSV, or TSV; the Excel workbook has five sheets: All, Swim, Bike, Run, and Other. Settings hold your critical swim speed, power threshold, and heart rate zones, which the dashboard uses to find your aerobic-zone workouts.</p>
+<nav class="pager" aria-label="More work"><a class="prev" href="artwork-mixed-media.html"><span aria-hidden="true">‹</span><span>Artwork | Mixed Media</span></a><a class="next" href="custom-gear-adapters.html"><span>CADD Projects</span><span aria-hidden="true">›</span></a></nav>
 
 </main>
 <footer><p>© 2025. All Rights Reserved to Renee Boucher.</p></footer>
