@@ -8,11 +8,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261026b">
+<link rel="stylesheet" href="style.css?v=20261026e">
+<script src="site.js?v=20261026e" defer></script>
 </head>
 <body>
 <header class="site-header">
-  <a class="logo" href="index.html" aria-label="Renee Boucher, home"><img src="assets/logo.png?v=20261026b" alt="RB monogram with a monstera leaf, 'renee boucher'"></a>
+  <a class="logo" href="index.html" aria-label="Renee Boucher, home"><img src="assets/logo.png?v=20261026e" alt="RB monogram with a monstera leaf, 'renee boucher'"></a>
   <nav class="site-nav" aria-label="Main">
     <a href="index.html" aria-current="page">work</a>
     <a href="about.html">about</a>
@@ -25,12 +26,12 @@
 <p class="role" style="margin-top:50px">// designer &amp; developer //</p>
 <p class="lede" style="margin-bottom:60px">A triathlon fitness app that reads your exercise history and tells you whether you’re improving, declining, or holding steady.</p>
 <div class="demo">
-  <video controls playsinline preload="metadata" poster="media/pacetrace-poster.jpg?v=20261026b" aria-label="Screen recording of the PaceTrace app, about one minute long">
-    <source src="media/pacetrace-demo.mp4?v=20261026b" type="video/mp4">
-    Your browser can’t play this video. <a href="media/pacetrace-demo.mp4?v=20261026b">Download the demo</a>.
+  <video controls autoplay muted loop playsinline preload="auto" poster="media/pacetrace-poster.jpg?v=20261026e" aria-label="Screen recording of the PaceTrace app, about one minute long">
+    <source src="media/pacetrace-demo.mp4?v=20261026e" type="video/mp4">
+    Your browser can’t play this video. <a href="media/pacetrace-demo.mp4?v=20261026e">Download the demo</a>.
   </video>
   <div>
-    <p><span class="key">Why I built it</span></p>
+    <h2 style="margin:0 0 22px">why I built it</h2>
     <p>I created PaceTrace because I couldn’t find a good way to track fitness performance over time for triathlon. TrainingPeaks, which many triathlon coaches use, offers performance insights called “fitness, form, and fatigue,” and I found them vague and hard to act on.</p>
     <p>I wanted an app that turns your own exercise history into fitness insights, using the same kinds of metrics a triathlon coach would, so you can see whether you are improving, declining, or holding steady over time.</p>
   </div>
@@ -39,13 +40,13 @@
 <h2 style="margin-top:110px">how it works</h2>
 <p>PaceTrace reads workouts from Apple Health and compares your recent training with the period before it, one sport at a time.</p>
 <div class="screens">
-  <figure><img src="media/pt-workouts.jpg?v=20261026b" alt="PaceTrace workout list showing runs, hikes, and rides with duration and distance" loading="lazy"><figcaption>Workouts, filtered by sport</figcaption></figure>
-  <figure><img src="media/pt-dashboard.jpg?v=20261026b" alt="PaceTrace dashboard with swimming pace and hiking heart rate trend charts" loading="lazy"><figcaption>Dashboard trends</figcaption></figure>
-  <figure><img src="media/pt-export.jpg?v=20261026b" alt="PaceTrace export screen with date range and file format options" loading="lazy"><figcaption>Export</figcaption></figure>
-  <figure><img src="media/pt-settings.jpg?v=20261026b" alt="PaceTrace settings screen with swim speed and heart rate zone inputs" loading="lazy"><figcaption>Settings</figcaption></figure>
+  <figure><img src="media/pt-workouts.jpg?v=20261026e" alt="PaceTrace workout list showing runs, hikes, and rides with duration and distance" loading="lazy"><figcaption>Workouts, filtered by sport</figcaption></figure>
+  <figure><img src="media/pt-dashboard.jpg?v=20261026e" alt="PaceTrace dashboard with swimming pace and hiking heart rate trend charts" loading="lazy"><figcaption>Dashboard trends</figcaption></figure>
+  <figure><img src="media/pt-export.jpg?v=20261026e" alt="PaceTrace export screen with date range and file format options" loading="lazy"><figcaption>Export</figcaption></figure>
+  <figure><img src="media/pt-settings.jpg?v=20261026e" alt="PaceTrace settings screen with swim speed and heart rate zone inputs" loading="lazy"><figcaption>Settings</figcaption></figure>
 </div>
 <h2 class="sm" style="margin-top:90px">dashboard</h2>
-<p>Each sport gets a trend card with a clear label: improving or declining. Running and cycling use an <span class="key">efficiency factor</span>, which is speed per heartbeat on aerobic-zone sessions. Swimming tracks <span class="key">pace per 100 m</span>, and hiking tracks <span class="key">heart rate on comparable climbs</span>. The time range runs from one month to all time.</p>
+<p>Each sport gets a trend card with a clear label: improving, holding or declining. Running and cycling use an <span class="key">efficiency factor</span>, which is speed per heartbeat on aerobic-zone sessions. Swimming tracks <span class="key">pace per 100 m</span>, and hiking tracks <span class="key">heart rate on comparable climbs</span>. The time range runs from one month to all time.</p>
 <h2 class="sm" style="margin-top:60px">workouts, export, and settings</h2>
 <p>Every workout from Apple Health appears in one list, with filters for each sport. You can export a date range as XLSX, CSV, or TSV; the Excel workbook has five sheets: All, Swim, Bike, Run, and Other. Settings hold your critical swim speed, power threshold, and heart rate zones, which the dashboard uses to find your aerobic-zone workouts.</p>
 

@@ -21,9 +21,9 @@ a{color:inherit}
 .site-nav a{text-decoration:none;color:var(--teal)}
 .site-nav a[aria-current="page"]{color:var(--ink);border-bottom:1px solid var(--ink)}
 .site-nav a:hover{border-bottom:1px solid var(--teal)}
-.tagline{position:absolute;left:calc(var(--u) * 62.5);top:calc(var(--u) * 21.2);transform:translateX(-50%);margin:0;color:var(--muted);white-space:nowrap;font-family:"PT Serif",Georgia,serif;font-size:clamp(9px,1.84vw,15px);line-height:1}
+.tagline{position:absolute;left:calc(var(--u) * 62.45);top:calc(var(--u) * 19.6);transform:translate(-50%,-50%);margin:0;color:var(--muted);white-space:nowrap;font-family:"PT Serif",Georgia,serif;font-size:clamp(9px,1.84vw,15px);line-height:1}
 
-main{max-width:var(--page);margin:0 auto;padding:0 9.9% 120px}
+main{max-width:var(--page);margin:0 auto;padding:0 calc(var(--u) * 9.9) 120px}
 h1,h2{font-weight:400;color:var(--teal);margin:0}
 h1{font-size:32px;line-height:1.06}
 h2{font-size:32px;line-height:1.06;margin:133px 0 31px}
@@ -61,7 +61,7 @@ figcaption{margin-top:14px}
 .pager .next{margin-left:auto;text-align:right}
 .pager a:hover span:not([aria-hidden]){text-decoration:underline;text-underline-offset:4px}
 footer{background:var(--faint)}
-footer p{max-width:var(--page);margin:0 auto;padding:30px 9.9%;color:#666;font-family:"PT Serif",Georgia,serif}
+footer p{max-width:var(--page);margin:0 auto;padding:30px calc(var(--u) * 9.9);color:#666;font-family:"PT Serif",Georgia,serif}
 
 /* pairs and galleries */
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start;margin-top:100px}
@@ -148,3 +148,72 @@ h1,h2,.big-question,.quote,.q19,.q24{text-wrap:balance}
 p,li,figcaption{text-wrap:pretty}
 
 .nb{white-space:nowrap}
+
+/* grids aligned to the header: left edge = the "r" of "renee", right edge = the last letters of work / about */
+.wide-grid{margin-left:calc(var(--u) * -.86);margin-right:calc(var(--u) * -2.8)}
+.tile-title-text{display:block}
+.subtitle{font-family:"PT Serif",Georgia,serif;font-size:20px;line-height:1.2;color:var(--muted);margin:14px 0 0}
+.demo > div h2{margin:0 0 22px}
+
+/* circle of quotes */
+.quote-cluster{container-type:inline-size;width:100%;aspect-ratio:1/1;margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4.4cqw;gap:clamp(14px,4.4cqw,30px);text-align:center;color:#0a8a78}
+.quote-cluster q{quotes:none;display:block;line-height:1.2}
+.qc1{font-size:15px;font-size:max(14px,3.5cqw);max-width:52%}
+.qc2{font-size:16px;font-size:max(14.5px,3.9cqw);max-width:67%}
+.qc3{font-size:24px;font-size:max(20px,6cqw);max-width:84%}
+.qc4{font-size:19px;font-size:max(16px,4.5cqw);max-width:67%}
+.qc5{font-size:14px;font-size:max(14px,3.3cqw);max-width:60%}
+
+/* research figures: equal tiles, hover shows the paper, click enlarges */
+.fig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.fig-tile{position:relative;aspect-ratio:1/1;border:0;padding:0;background:#f4f4f4;cursor:zoom-in;overflow:hidden;font:inherit;color:inherit}
+.fig-tile img{width:100%;height:100%;object-fit:contain;padding:10px;box-sizing:border-box}
+.fig-cap{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:8px;padding:16px;background:rgba(6,72,62,.88);color:#fff;text-align:left;opacity:0;transition:opacity .2s;font-size:14px;line-height:1.3}
+.fig-venue{font-size:12px;opacity:.85}
+.fig-tile:hover .fig-cap,.fig-tile:focus-visible .fig-cap{opacity:1}
+.credit-line{font-size:13px;line-height:1.4;color:#777;margin:70px 0 0}
+.credit-line a{color:#777}
+
+/* artwork gallery */
+.art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.art-tile{aspect-ratio:1/1;border:0;padding:0;background:#f2f2f2;cursor:zoom-in;overflow:hidden}
+.art-tile img{width:100%;height:100%;object-fit:cover;transition:transform .25s}
+.art-tile:hover img,.art-tile:focus-visible img{transform:scale(1.04)}
+
+/* enlarged view */
+.lightbox{border:0;padding:0;background:transparent;width:100vw;height:100vh;max-width:100vw;max-height:100vh;overflow:hidden}
+.lightbox::backdrop{background:rgba(255,255,255,.97)}
+.lightbox[open]{display:flex;align-items:center;justify-content:center}
+.lightbox figure{margin:0;max-width:min(92vw,1400px);display:flex;flex-direction:column;align-items:center;gap:14px}
+.lightbox img{max-width:100%;max-height:76vh;width:auto;height:auto;object-fit:contain}
+.lightbox figcaption{font-size:15px;line-height:1.35;color:var(--ink);text-align:center;max-width:46rem;margin:0}
+.lightbox figcaption a{color:#067a6a}
+.lb-close,.lb-nav{position:absolute;background:none;border:0;font-family:Georgia,serif;font-size:44px;line-height:1;cursor:pointer;color:var(--ink);padding:8px 16px}
+.lb-close{top:12px;right:16px}
+.lb-nav{top:50%;transform:translateY(-50%)}
+.lb-prev{left:6px}.lb-next{right:6px}
+.lightbox.single .lb-nav{display:none}
+
+@media (hover:none) and (pointer:coarse){
+  .fig-tile{aspect-ratio:auto;display:flex;flex-direction:column;background:none;text-align:left}
+  .fig-tile img{aspect-ratio:1/1;height:auto;background:#f4f4f4}
+  .fig-cap{position:static;opacity:1;background:none;color:var(--ink);padding:8px 0}
+}
+@media (max-width:640px){
+  .wide-grid{margin-left:0;margin-right:0}
+  .art-grid{grid-template-columns:repeat(2,1fr)}
+  .fig-grid{grid-template-columns:1fr}
+  .quote-cluster{aspect-ratio:auto;gap:22px}
+  .quote-cluster q{max-width:none}
+  .qc1,.qc5{font-size:16px}.qc2{font-size:17px}.qc3{font-size:24px}.qc4{font-size:20px}
+}
+
+/* insights: text on the left, quote circle on the right (circle runs out to the same right edge as the tabs) */
+.insights-row{display:grid;grid-template-columns:minmax(0,210px) minmax(0,1fr);gap:16px;align-items:center;margin-top:133px;margin-right:calc(var(--u) * -2.8)}
+.insights-text h2{margin:0 0 24px}
+.insights-text .bullets{margin:0 0 0 14px}
+@media (max-width:640px){
+  .insights-row{grid-template-columns:1fr;margin-top:90px;margin-right:0}
+  .insights-row .quote-cluster{container-type:normal;aspect-ratio:auto;margin-top:40px;gap:22px}
+}
+.quote-cluster .key{white-space:nowrap}
