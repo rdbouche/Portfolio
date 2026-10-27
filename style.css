@@ -156,13 +156,13 @@ p,li,figcaption{text-wrap:pretty}
 .demo > div h2{margin:0 0 22px}
 
 /* circle of quotes */
-.quote-cluster{container-type:inline-size;width:100%;aspect-ratio:1/1;margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4.4cqw;gap:clamp(14px,4.4cqw,30px);text-align:center;color:#0a8a78}
+.quote-cluster{container-type:inline-size;width:100%;aspect-ratio:1/1;margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3.4cqw;gap:clamp(12px,3.4cqw,30px);text-align:center;color:#0a8a78}
 .quote-cluster q{quotes:none;display:block;line-height:1.2}
-.qc1{font-size:15px;font-size:max(14px,3.5cqw);max-width:52%}
-.qc2{font-size:16px;font-size:max(14.5px,3.9cqw);max-width:67%}
-.qc3{font-size:24px;font-size:max(20px,6cqw);max-width:84%}
-.qc4{font-size:19px;font-size:max(16px,4.5cqw);max-width:67%}
-.qc5{font-size:14px;font-size:max(14px,3.3cqw);max-width:60%}
+.qc1{font-size:14px;font-size:max(13.5px,3.3cqw);max-width:54%}
+.qc2{font-size:15px;font-size:max(14px,3.6cqw);max-width:68%}
+.qc3{font-size:23px;font-size:max(19px,5.4cqw);max-width:84%}
+.qc4{font-size:18px;font-size:max(15.5px,4.2cqw);max-width:68%}
+.qc5{font-size:13.5px;font-size:max(13.5px,3.1cqw);max-width:62%}
 
 /* research figures: equal tiles, hover shows the paper, click enlarges */
 .fig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
@@ -217,3 +217,12 @@ p,li,figcaption{text-wrap:pretty}
   .insights-row .quote-cluster{container-type:normal;aspect-ratio:auto;margin-top:40px;gap:22px}
 }
 .quote-cluster .key{white-space:nowrap}
+
+/* Concept A bottle with the quote circle beside it; both are the same height */
+.concept-row{display:grid;grid-template-columns:minmax(0,var(--rfr)) minmax(0,1fr);gap:20px;align-items:center;margin-top:100px;margin-right:calc(var(--u) * -2.8)}
+.concept-row > img{width:100%;aspect-ratio:var(--r);object-fit:contain;display:block}
+@media (max-width:640px){
+  .concept-row{grid-template-columns:1fr;margin-right:0;margin-top:70px}
+  .concept-row > img{max-width:190px;margin:0 auto}
+  .concept-row .quote-cluster{container-type:normal;aspect-ratio:auto;margin-top:30px;gap:22px}
+}
